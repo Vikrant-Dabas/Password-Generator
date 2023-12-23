@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;600&family=Oswald:wght@600&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="top">
+            <div class="display"></div>
+            <button class="copy"></button>
+        </div>
+        <div class="flex">
+            <label for="len">Password Length</label>
+            <input type="number" name="len" id="len" value="20" checked>
+        </div>
+        <div class="flex">
+            <label for="upper">Include uppercase letters</label>
+            <input type="checkbox" name="upper" id="upper" checked>
+        </div>
+        <div class="flex">
+            <label for="lower">Include lower letters</label>
+            <input type="checkbox" name="lower" id="lower" checked>
+        </div>
+        <div class="flex">
+            <label for="no">Include numbers</label>
+            <input type="checkbox" name="no" id="no" checked>
+        </div>
+        <div class="flex">
+            <label for="symbol">Include symbol</label>
+            <input type="checkbox" name="symbol" id="symbol" checked>
+        </div>
+        <button class="generate">Generate Password</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
