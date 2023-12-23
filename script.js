@@ -86,5 +86,10 @@ generate.click(()=>{
         }
     }
     display.text(password);
-    console.log(password)
+});
+
+copy.click(()=>{
+    let text = display.text();
+    navigator.clipboard.writeText(text);
+    alert("Password is copied to clipboard");
 })
